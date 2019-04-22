@@ -5,7 +5,7 @@
         <div class="row">
           <div class="col-lg-6">
               <a href="#">xCurrGPGames</a><br>
-              <input v-on:keyup.enter="searchUser" ref="el" v-model="handle" type="text" placeholder="@PSNusername" autofous><br>
+              <input  v-cloak v-on:keyup.enter="searchUser" ref="el" v-model="handle" type="text" placeholder="@PSNusername" autofous><br>
           </div>
         </div>
         <div class="row pl-3 pr-3">
@@ -82,12 +82,6 @@ a, a:hover {
   color: #FFF;
 }
 
-input[type=text] {
-  background: none;
-  color: #FFF;
-  border: none;
-  outline: none;
-}
 
 .text-main {  
   /* font-size: 34rem; */
