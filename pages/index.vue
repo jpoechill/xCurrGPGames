@@ -31,7 +31,8 @@ export default {
   data: function () {
     return {
       APIconfig: {
-        headers: { 'X-API-Key': 'bbb4ecfaddd943faae70ea2dcb84254f' }
+        headers: { 'X-API-Key': 'bbb4ecfaddd943faae70ea2dcb84254f' },
+        progress: false
       },
       handle: '',
       gamesPlayed: 0,
