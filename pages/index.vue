@@ -46,7 +46,7 @@ export default {
     },
     getIDByUsername: function () {
       let query = this.handle
-      let url = 'https://www.bungie.net/platform//Destiny2/SearchDestinyPlayer/-1/' + query
+      let url = 'https://www.bungie.net/platform/Destiny2/SearchDestinyPlayer/-1/' + query
 
       this.$axios(url, this.APIconfig).then(response => {
         this.memID = response.data.Response[0].membershipId
