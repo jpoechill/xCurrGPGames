@@ -1,6 +1,6 @@
 <template>
   <no-ssr>
-    <div class="d-flex pt-4 h-100">
+    <div class="d-flex pt-5 h-100">
       <div class="w-100">
         <div class="container">
           <div class="row">
@@ -9,7 +9,7 @@
                 <input  v-cloak v-on:keyup.enter="searchUser" ref="el" v-model="handle" type="text" placeholder="@PSNusername" autofous><br>
             </div>
           </div>
-          <div class="row pl-3 pr-3">
+          <div class="row pl-3 pr-3 mt-3">
             <hr>
           </div>
         </div>
