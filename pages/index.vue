@@ -1,26 +1,28 @@
 <template>
-  <div class="d-flex pt-4 h-100">
-    <div class="w-100">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6">
-              <a href="#">xCurrGPGames</a><br>
-              <input  v-cloak v-on:keyup.enter="searchUser" ref="el" v-model="handle" type="text" placeholder="@PSNusername" autofous><br>
+  <no-ssr>
+    <div class="d-flex pt-4 h-100">
+      <div class="w-100">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+                <a href="#">xCurrGPGames</a><br>
+                <input  v-cloak v-on:keyup.enter="searchUser" ref="el" v-model="handle" type="text" placeholder="@PSNusername" autofous><br>
+            </div>
+          </div>
+          <div class="row pl-3 pr-3">
+            <hr>
           </div>
         </div>
-        <div class="row pl-3 pr-3">
-          <hr>
-        </div>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 text-center pt-2">
-            <div class="text-main">{{ gamesPlayed }}</div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 text-center pt-2">
+              <div class="text-main">{{ gamesPlayed }}</div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
+  </no-ssr>
 </template>
 
 <script>
