@@ -54,7 +54,6 @@ export default {
         this.memID = response.data.Response[0].membershipId
         this.memIDs = response.data.Response.map(memAccount => [memAccount.membershipId, memAccount.membershipType])
 
-        // console.log(this.memIDs)
         this.getGPStats()
       })
     },
@@ -63,6 +62,8 @@ export default {
       
       this.$axios(url, this.APIconfig).then(response => {
         this.gamesPlayed = response.data.Response.pvecomp_gambit.allTime.activitiesEntered.basic.value
+
+        console.log(response)
       })
     }
   }
@@ -77,7 +78,7 @@ html, body {
   color: #FFF!important;
 }
 
-a {
+a, a:hover {
   color: #FFF;
 }
 
