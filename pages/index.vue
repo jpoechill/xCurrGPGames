@@ -97,6 +97,12 @@ hr {
   border-top: 1px solid #FFF;
 }
 
+@media (min-width: 1200px) {
+  .text-main {  
+    font-size: 30rem;
+  }
+}
+
 @media (max-width: 1200px) {
   .text-main {  
     font-size: 30rem;
